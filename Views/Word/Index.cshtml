@@ -1,0 +1,23 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+
+<html>
+<head>
+    <title>WORD PAGE</title>
+</head>
+<body>
+    <div>
+        <h1>Add Word to display Diagonally</h1>
+        @using (Html.BeginForm("postWord", "Word"))
+        {
+
+            <input id="Text1" type="text" name="word" />
+            <input id="Button1" type="submit" value="button" />
+        }
+
+    </div>
+</body>
+</html>

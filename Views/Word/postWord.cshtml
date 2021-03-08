@@ -1,0 +1,25 @@
+﻿@using WebApplication1.Models;
+@{
+    ViewBag.Title = "postWord";
+}
+
+<h2>postWord</h2>
+@{
+    var data = ViewBag.Message;
+}
+<h3>NAME : @data.word</h3>
+@{  
+    <table>
+        @for (var i = 0; i < data.word.Length; i++)
+        {
+        <tr>
+            @for (var j = 0; j < @i; j++)
+            {
+                <td></td>
+            }
+            <td>@data.word[@i]</td>
+        </tr>
+        }
+    </table>
+
+}
